@@ -7,7 +7,7 @@
  */
 char **_strtok(char *line)
 {
-	const char *delimit = " \t \n";
+	const char *delimit = "\n \t ";
 	int i = 0;
 	char **tokens;
 	char *tok;
