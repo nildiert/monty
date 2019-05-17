@@ -39,7 +39,7 @@ void verifier(char **reception, stack_t **stack, int line)
 	}
 		if (instructions[j].f == NULL)
 		{
-			printf("L %d: unknown instruction %s\n", line, reception[0]);
+			printf("L%d: unknown instruction %s\n", line, reception[0]);
 			exit(EXIT_FAILURE);
 		}
 }
