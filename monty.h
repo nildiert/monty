@@ -44,7 +44,6 @@ void _pall(stack_t **stack, unsigned int line_number);
 void _free(stack_t **stack);
 void read_file(char *mystring, stack_t **stack);
 char *strcp(char *str);
-int get_verifier(char *argue);
 char **_strtok(char *line);
 void verifier(char **reception, stack_t **stack, int line);
 void _pop(stack_t **stack, unsigned int line_number);
@@ -52,6 +51,6 @@ void _pint(stack_t **stack, unsigned int line_number);
 void _nop(stack_t **stack, unsigned int line_number);
 void _free_doub(char **args);
 void _add(stack_t **stack, unsigned int line_number);
-void _swap(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
 int len_stack(stack_t **stack);
 #endif /* MONTY_H */
