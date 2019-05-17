@@ -1,13 +1,13 @@
 #include "monty.h"
 /**
- * _strtok - tokenize and return an array of tokens
+ *_strtok - tokenize and return an array of tokens
  *@line: the file to cut
  *
  * Return: array of tokens.
  */
 char **_strtok(char *line)
 {
-	const char *delimit = " \t\n";
+	const char *delimit = " \t \n";
 	int i = 0;
 	char **tokens;
 	char *tok;
