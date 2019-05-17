@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- *swap - function that swaps the values in the list
+ *_swap - function that swaps the values in the list
  *@stack: pointer to the stack
  *@line_number: the number of lines that recives
  *Return: void
  */
-void swap(stack_t **stack, unsigned int line_number)
+void _swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp1;
 	stack_t *tmp2;
