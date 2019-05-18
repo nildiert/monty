@@ -32,9 +32,17 @@ void verifier(char **reception, stack_t **stack, int line)
 		if (!(strcmp(instructions[j].opcode, reception[0])))
 		{
 			if (!strcmp(reception[0], "push"))
+			{
+				if (reception[1] != NULL)
 				global = atoi(reception[1]);
+				else
+				{
+					fprintf(stderr, "L%d: usage: push integer\n", line);
+					exit(EXIT_FAILURE);
+				}
 			instructions[j].f(stack, (unsigned int)line);
 			break;
+			}
 		}
 	}
 		if (instructions[j].f == NULL)
