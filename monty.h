@@ -53,4 +53,6 @@ void _free_doub(char **args);
 void _add(stack_t **stack, unsigned int line_number);
 void _swap(stack_t **stack, unsigned int line_number);
 int len_stack(stack_t **stack);
+char _number(char *arg);
+int _isdigit(int c);
 #endif /* MONTY_H */

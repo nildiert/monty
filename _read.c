@@ -21,7 +21,7 @@ void read_file(char *mystring, stack_t **stack)
 
 		while (getline(&line, &bufsize, file) != -1)
 		{
-		        count++;
+			count++;
 			if (line[0] == '\n')
 				continue;
 			arguments = _strtok(line);
