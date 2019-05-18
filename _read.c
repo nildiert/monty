@@ -22,7 +22,8 @@ void read_file(char *mystring, stack_t **stack)
 		while (getline(&line, &bufsize, file) != -1)
 		{
 			count++;
-
+			if (line[0] == '\n')
+				continue;
 			arguments = _strtok(line);
 			verifier(arguments, stack, count);
 			_free_doub(arguments);
