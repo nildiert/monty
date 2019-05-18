@@ -28,6 +28,7 @@ void read_file(char *mystring, stack_t **stack)
 			verifier(arguments, stack, count);
 			_free_doub(arguments);
 		}
+		free(line);
 		fclose(file);
 	}
 	else
@@ -35,4 +36,5 @@ void read_file(char *mystring, stack_t **stack)
 		fprintf(stderr, "Error: Can't open file %s\n", mystring);
 		exit(EXIT_FAILURE);
 	}
+
 }

@@ -21,6 +21,8 @@ int main(int argc, char **argv)
 	else
 	{
 		fprintf(stderr, "USAGE: monty file\n");
+		_free(stack);
+		free(stack);
 		exit(EXIT_FAILURE);
 	}
 	_free(stack);
