@@ -7,7 +7,7 @@
  */
 char **_strtok(char *line)
 {
-	const char *delimit = " \t \n ";
+	const char *delimit = " \t\n";
 	int i = 0;
 	char **tokens;
 	char *tok;
@@ -22,6 +22,7 @@ char **_strtok(char *line)
 	{
 		tok = strtok(NULL, delimit);
 		i++;
+
 	}
 	tokens = malloc(sizeof(char *) * i);
 	i = 0;
@@ -30,6 +31,8 @@ char **_strtok(char *line)
 	{
 		i++;
 		tokens[i] = strtok(NULL, delimit);
+		if (i == 2)
+			break;
 	}
 	free(first_dup);
 	return (tokens);
